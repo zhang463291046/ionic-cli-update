@@ -40,7 +40,7 @@ git push origin master
 # 安装依赖包
 npm install
 注意:1.一定要用这个npm install指令安装依赖包,用cnpm install指令,安装模式不同,会报错;
-	2.安装依赖包ws版本需要用3.3.2,版本3.3.3,刷新浏览器,热更新会报错,导致程序停止运行
+2.安装依赖包ws版本需要用3.3.2,版本3.3.3,刷新浏览器,热更新会报错,导致程序停止运行
 
 # 浏览器打开 localhost:8100(默认)
 ionic serve
