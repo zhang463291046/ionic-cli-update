@@ -1,6 +1,7 @@
 # ionic-cli
 
 > 基础框架ionic+angular+cordova
+
 ``` 
 # 全局安装cordova ionic
 npm install -g cordova ionic
