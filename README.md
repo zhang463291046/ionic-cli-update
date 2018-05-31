@@ -1,6 +1,6 @@
 # ionic-cli
 
-> 基础框架ionic+angular+cordova
+> 基础框架ionicUI,开发语言angular,打包工具cordova,js写法支持typescript
 
 ``` 
 # 全局安装cordova ionic
@@ -15,27 +15,7 @@ ionic serve
 注意:依赖包ws@3.3.2
 ```
 
-## 项目代码常用指令
-``` 
-# clone代码
-git clone 远程服务器地址
-
-# 拉取代码
-git pull origin master
-
-# 新增或修改
-git add .
-
-# 提交本地
-git commit -a -m '修改'
-
-# 提交远程
-git push origin master
-
-```
-
 ## 运行项目和打包
-
 ``` 
 # 安装依赖包
 npm install
@@ -60,11 +40,40 @@ ionic cordova build android --release
 # 安装苹果环境平台
 ionic cordova platform add ios
 
-# 打包苹果开发环境apk
+# 打包苹果开发环境ipa
 ionic cordova build ios
 
-# 打包苹果生产环境apk
+# 打包苹果生产环境ipa
 ionic cordova build ios --release
+
+```
+
+## 关于打包配置
+```
+# window上配置安卓打包环境
+1 JAVA官网下载jdk,进行环境变量JAVA_HOME(AndroidSDK依赖)
+2 下载Android SDK,进行环境变量ANDROID_HOME
+
+# mac上配置ios打包环境
+后续补充
+```
+
+## 项目代码常用指令
+``` 
+# clone代码
+git clone 远程服务器地址
+
+# 拉取代码
+git pull origin master
+
+# 新增或修改
+git add .
+
+# 提交本地
+git commit -a -m '修改'
+
+# 提交远程
+git push origin master
 
 ```
 
@@ -72,8 +81,8 @@ ionic cordova build ios --release
 ```
 ├── node_modules             // 第三方依赖包
 ├── platforms                // 平台,android和ios
-├── plugins                  // 插件包,cordova,ionic
-├── resources                // 配置的静态图片文件
+├── plugins                  // 插件包,cordova和ionic
+├── resources                // 打包配置的静态图片文件
 ├── src                      // 生产目录
 │   ├── app                  // 
 │   ├── assets               // 图片资源
@@ -93,32 +102,6 @@ ionic cordova build ios --release
 ├── tsconfig.json            // ts配置
 ├── tslint.json              // ts规则
 ```
-
-## 技术说明文档
-| 描述                       | 依赖包                   | 备注                      |
-|----------------------------|--------------------------|---------------------------|
-| 网络请求                   | axios                    |暂无                       |
-| websocket通讯              | mqtt                     |暂无                       |
-| 基础UI框架                 | iview                    |暂无                       |
-| 报表图形统计               | vue-echarts              |暂无                       |
-| 样式支持less,sass,scss     | less和less-loader支持less;node-sass和sass-loader支持sass,scss|暂无         |
-| 路由配置                   | vue-router               |暂无                       |
-| 状态管理树                 | vuex                     |暂无                       |
-| 国际化语言库               | vue-i18n                 |暂无                       |
-
-
-## 开发常用包推荐
-| 描述                       | 依赖包                   |备注                       |
-|----------------------------|--------------------------|---------------------------|
-| 网络请求                   | axios                    |暂无                       |
-| websocket通讯              | mqtt                     |暂无                       |
-| 基础UI框架                 | element,iview            |暂无                       |
-| 报表图形统计               | vue-echarts              |暂无                       |
-| 样式支持less,sass,scss     | less和less-loader支持less;node-sass和sass-loader支持sass,scss|暂无         |
-| 路由配置                   | vue-router               |暂无                       |
-| 状态管理树                 | vuex                     |暂无                       |
-| 国际化语言库               | vue-i18n                 |暂无                       |
-| 货币转换                   | accounting               |暂无                       |
 
 ## 欢迎有兴趣的小伙伴给点提议,在Issues中留言.后期会扩展组件和JS
 
